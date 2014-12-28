@@ -2,4 +2,6 @@
 build/
 eclipse/
 out/
-NoDropInventory.*
+*.iml
+*.iws
+*.ipr
