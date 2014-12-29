@@ -1,20 +1,20 @@
-package cz.ondraster.nodropinventory;
+package cz.ondraster.nodropcraftinggrid;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
 import java.util.Map;
 
 @IFMLLoadingPlugin.MCVersion("1.7.10")
-@IFMLLoadingPlugin.Name(NoDropInventoryCore.NAME)
-public class NoDropInventoryLoader implements IFMLLoadingPlugin {
+@IFMLLoadingPlugin.Name(NoDropCraftingGridCore.NAME)
+public class NoDropCraftingGridLoader implements IFMLLoadingPlugin {
    @Override
    public String[] getASMTransformerClass() {
-      return new String[]{NDITransformer.class.getName()};
+      return new String[]{NDCGTransformer.class.getName()};
    }
 
    @Override
    public String getModContainerClass() {
-      return NoDropInventoryCore.class.getName();
+      return NoDropCraftingGridCore.class.getName();
    }
 
    @Override

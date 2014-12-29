@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.0"
-group = "cz.ondraster.nodropinventory"
-archivesBaseName = "NoDropInventory"
+group = "cz.ondraster.nodropcraftinggrid"
+archivesBaseName = "NoDropCraftingGrid"
 
 minecraft {
     version = "1.7.10-10.13.2.1277"
@@ -45,7 +45,7 @@ processResources
         }
 jar {
     manifest {
-        attributes 'FMLCorePlugin': 'cz.ondraster.nodropinventory.NoDropInventoryLoader'
+        attributes 'FMLCorePlugin': 'cz.ondraster.nodropcraftinggrid.NoDropCraftingGridLoader'
         attributes 'FMLCorePluginContainsFMLMod': 'true'
     }
 }

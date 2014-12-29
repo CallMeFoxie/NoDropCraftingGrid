@@ -1,8 +1,8 @@
 [
 {
-  "modid": "nodropinventory",
-  "name": "No Drop Crafting Inventory",
-  "description": "Does not drop items from the crafting inventory when closed.",
+  "modid": "nodropcraftinggrid",
+  "name": "No Drop Crafting Grid",
+  "description": "Does not drop items from the crafting grid when GUI is closed.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

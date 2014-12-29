@@ -1,11 +1,11 @@
-package cz.ondraster.nodropinventory;
+package cz.ondraster.nodropcraftinggrid;
 
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.commons.AdviceAdapter;
 
-public class NDIAdapter extends AdviceAdapter {
+public class NDCGAdapter extends AdviceAdapter {
    /**
     * Creates a new {@link org.objectweb.asm.commons.AdviceAdapter}.
     *
@@ -19,7 +19,7 @@ public class NDIAdapter extends AdviceAdapter {
 
    boolean deobfEnv;
 
-   protected NDIAdapter(MethodVisitor mv, int access, String name, String desc, boolean deobf) {
+   protected NDCGAdapter(MethodVisitor mv, int access, String name, String desc, boolean deobf) {
       super(Opcodes.ASM4, mv, access, name, desc);
       deobfEnv = deobf;
    }

@@ -1,9 +1,9 @@
-package cz.ondraster.nodropinventory;
+package cz.ondraster.nodropcraftinggrid;
 
 import net.minecraft.launchwrapper.IClassTransformer;
 import org.objectweb.asm.*;
 
-public class NDITransformer implements IClassTransformer {
+public class NDCGTransformer implements IClassTransformer {
    @Override
    public byte[] transform(String className, String newClassName, byte[] origCode) {
       //System.out.println(className);
@@ -27,7 +27,7 @@ public class NDITransformer implements IClassTransformer {
             if (name.equals(methodToPatch) || name.equals(methodToPatch2) && desc.endsWith(";)V")) {
                MethodVisitor mv;
                mv = cv.visitMethod(access, name, desc, signature, exceptions);
-               mv = new NDIAdapter(mv, access, name, desc, name.equals(methodToPatch2));
+               mv = new NDCGAdapter(mv, access, name, desc, name.equals(methodToPatch2));
                return mv;
 
             }

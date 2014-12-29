@@ -1,4 +1,4 @@
-package cz.ondraster.nodropinventory;
+package cz.ondraster.nodropcraftinggrid;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -55,7 +55,7 @@ public class CraftingGridExtended implements IExtendedEntityProperties {
 
    }
 
-   public static final void register(EntityPlayer player) {
+   public static void register(EntityPlayer player) {
       player.registerExtendedProperties(EXT_PROP, new CraftingGridExtended(player));
    }
 }

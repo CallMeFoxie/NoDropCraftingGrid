@@ -1,4 +1,4 @@
-package cz.ondraster.nodropinventory;
+package cz.ondraster.nodropcraftinggrid;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -13,10 +13,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.player.PlayerDropsEvent;
 
-@Mod(modid = "nodropinventory", version = "1.0", name = "No Drop Inventory")
-public class NoDropInventory {
+@Mod(modid = "nodropcraftinggrid", version = "1.0", name = "No Drop Crafting Grid")
+public class NoDropCraftingGrid {
    @Mod.Instance
-   public static NoDropInventory instance;
+   public static NoDropCraftingGrid instance;
 
    @Mod.EventHandler
    public void preinit(FMLPreInitializationEvent event) {
