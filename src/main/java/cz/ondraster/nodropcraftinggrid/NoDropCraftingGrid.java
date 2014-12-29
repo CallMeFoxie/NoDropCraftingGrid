@@ -13,8 +13,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.player.PlayerDropsEvent;
 
-@Mod(modid = "nodropcraftinggrid", version = "1.0", name = "No Drop Crafting Grid")
+@Mod(modid = NoDropCraftingGrid.MODID, version = NoDropCraftingGrid.VERSION, name = NoDropCraftingGrid.NAME)
 public class NoDropCraftingGrid {
+   public static final String MODID = "nodropcraftinggrid";
+   public static final String VERSION = "1.0";
+   public static final String NAME = "No Drop Crafting Grid";
+   public static final String AUTHOR = "OndraSter";
+
    @Mod.Instance
    public static NoDropCraftingGrid instance;
 

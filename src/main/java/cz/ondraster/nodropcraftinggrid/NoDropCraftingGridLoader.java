@@ -5,7 +5,7 @@ import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 import java.util.Map;
 
 @IFMLLoadingPlugin.MCVersion("1.7.10")
-@IFMLLoadingPlugin.Name(NoDropCraftingGridCore.NAME)
+@IFMLLoadingPlugin.Name(NoDropCraftingGrid.NAME)
 public class NoDropCraftingGridLoader implements IFMLLoadingPlugin {
    @Override
    public String[] getASMTransformerClass() {
