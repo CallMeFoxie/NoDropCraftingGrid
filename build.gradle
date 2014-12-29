@@ -19,10 +19,10 @@ apply plugin: 'forge'
 
 version = "1.0"
 group = "cz.ondraster.nodropcraftinggrid"
-archivesBaseName = "NoDropCraftingGrid"
+archivesBaseName = "NoDropCraftingGrid-1.8"
 
 minecraft {
-    version = "1.7.10-10.13.2.1277"
+    version = "1.8-11.14.0.1281-1.8"
     runDir = "eclipse"
 }
 
