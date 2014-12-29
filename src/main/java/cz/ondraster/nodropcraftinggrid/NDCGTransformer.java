@@ -7,7 +7,7 @@ public class NDCGTransformer implements IClassTransformer {
    @Override
    public byte[] transform(String className, String newClassName, byte[] origCode) {
       //System.out.println(className);
-      if (className.equals("net.minecraft.inventory.ContainerPlayer") || className.equals("aap")) {
+      if (className.equals("net.minecraft.inventory.ContainerPlayer") || className.equals("ajb")) {
          return patchClass(className, origCode, true);
       }
 

@@ -1,10 +1,10 @@
 package cz.ondraster.nodropcraftinggrid;
 
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
+import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 import java.util.Map;
 
-@IFMLLoadingPlugin.MCVersion("1.7.10")
+@IFMLLoadingPlugin.MCVersion("1.8")
 @IFMLLoadingPlugin.Name(NoDropCraftingGrid.NAME)
 public class NoDropCraftingGridLoader implements IFMLLoadingPlugin {
    @Override
